@@ -1,0 +1,98 @@
+* {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Archivo Black';
+    background-color: #B20600; /* Background color */
+}
+
+.topsection{
+    background-image: url('images/dice_bg.jpg'); /* Image URL */
+    background-size: cover; /* Maintain aspect ratio */
+    background-repeat: no-repeat; /* Prevent repetition */
+    background-blend-mode: screen; /* Blend mode */
+    background-color: #B20600; /* Background color */
+}
+
+.midsection{
+    background-image: url('images/dice_bg.jpg'); /* Image URL */
+    background-size: cover; /* Maintain aspect ratio */
+    background-repeat: no-repeat; /* Prevent repetition */
+    background-blend-mode: normal; /* Blend mode */
+    background-color: #B20600; /* Background color */
+}
+
+.botsection{
+    background-image: url('images/dice_bg.jpg'); /* Image URL */
+    background-size: cover; /* Maintain aspect ratio */
+    background-repeat: no-repeat; /* Prevent repetition */
+    background-blend-mode: luminosity; /* Blend mode */
+    background-color: #B20600; /* Background color */
+}
+
+.separator {
+    width: 100%;
+    border: none;
+    border-top: 2px solid #050505; /* Divider color */
+}
+
+@keyframes customBounce {
+    30% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-20deg) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(20deg) scale(1.2);
+    }
+
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.about-logos {
+    animation: customBounce 1.5s infinite;
+}
+.w-full button:hover .svgg path {
+    fill: black;
+}
+
+.gif-container {
+    background-color: #f0f0f0; /* Set the background color */
+    padding: 5px; /* Adjust padding as needed */
+}
+
+.gif-container img {
+    display: block;
+    margin: 0 auto; /* Center the GIF horizontally */
+    mix-blend-mode: multiply;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Adjust the icon size */
+}
+
+/* Style the icon for the "play" state */
+.fa-play::before {
+    content: "\f04b"; /* Font Awesome icon code for "play" */
+}
+
+/* Style the icon for the "pause" state */
+.fa-pause::before {
+    content: "\f04c"; /* Font Awesome icon code for "pause" */
+}
